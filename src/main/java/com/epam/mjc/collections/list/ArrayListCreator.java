@@ -10,7 +10,8 @@ public class ArrayListCreator {
         ArrayList<String> arrayList = new ArrayList<>();
         ListIterator<String> it = sourceList.listIterator();
         while (it.hasNext()) {
-            if (it.hasNext()) System.out.println(it.next());
+            it.next();
+            if (it.hasNext()) it.next();
             if (it.hasNext()) {
                 arrayList.add(it.next());
                 arrayList.add(sourceList.get(it.nextIndex() - 1));
